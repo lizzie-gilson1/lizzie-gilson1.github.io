@@ -10,7 +10,8 @@
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #000;
+            overflow: hidden;
         }
         header {
             background-color: #333;
@@ -67,6 +68,15 @@
             margin-bottom: 10px;
         }
     </style>
+    <script>
+        document.addEventListener("mousemove", function(e) {
+            const bg = document.querySelector("body");
+            const mouseX = e.pageX / window.innerWidth;
+            const mouseY = e.pageY / window.innerHeight;
+            bg.style.background = `radial-gradient(circle, transparent 15%, rgba(255, 255, 255, 0.1) 30%, rgba(255, 255, 255, 0.2) 40%, rgba(255, 255, 255, 0.3) 60%, rgba(255, 255, 255, 0.4) 80%, rgba(255, 255, 255, 0.5) 100%), #000`;
+            bg.style.backgroundPosition = `${mouseX * 100}% ${mouseY * 100}%`;
+        });
+    </script>
 </head>
 <body>
     <header>
