@@ -79,11 +79,16 @@
         .volunteer p {
             margin-bottom: 10px;
         }
-        .experience-item {
+         .experience-item {
             margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
         }
         .experience-item h3 {
-            margin-top: 0;
+            margin: 0;
+        }
+        .experience-item p {
+            margin: 0;
         }
         .experience-item ul {
             margin-top: 5px;
@@ -132,7 +137,10 @@
         <section class="experience">
             <h2>Relevant Experience</h2>
             <div class="experience-item">
-                <h3>Merck, Berkeley, CA</h3>
+                <h3>Merck</h3>
+                <p>Berkelet, CA</p>
+            </div>
+            <div>
                 <p>Capstone Project January 2024 – Current</p>
                 <ul>
                     <li>Finetuned an LLM for analysis of scientific articles with PyTorch using Gemma as the base model</li>
