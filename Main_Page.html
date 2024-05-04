@@ -68,16 +68,26 @@
         a:hover {
             text-decoration: underline;
         }
-        .experience-item {
+/*         .experience-item {
             border-left: 4px solid #007bff;
             padding-left: 10px;
             margin-bottom: 20px;
-        }
+        } */
         .skills p {
             margin-bottom: 10px;
         }
         .volunteer p {
             margin-bottom: 10px;
+        }
+        .experience-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3 {
+            margin-top: 0;
+        }
+        .experience-item ul {
+            margin-top: 5px;
+            padding-left: 20px;
         }
         </style>
 
@@ -122,8 +132,61 @@
         <section class="experience">
             <h2>Relevant Experience</h2>
             <div class="experience-item">
-                <!-- Include relevant experience here -->
+                <h3>Merck, Berkeley, CA</h3>
+                <p>Capstone Project January 2024 – Current</p>
+                <ul>
+                    <li>Finetuned an LLM for analysis of scientific articles with PyTorch using Gemma as the base model</li>
+                    <li>Automated data scraping, cleaned data, calculated performance metrics of the model</li>
+                </ul>
             </div>
+            <div class="experience-item">
+                <h3>UC Berkeley Department of Integrative Biology, Berkeley, CA</h3>
+                <p>Graduate Student Instructor Sep 2023 – Current</p>
+                <ul>
+                    <li>Led lab sessions of 32 students, presenting to students and guiding them through concepts in Integrative Biology</li>
+                    <li>Graded assignments and exams, and helped in the creation of new assessments</li>
+                    <li>Held office hours and provided additional support to students of different skill levels</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>Chavkin Lab – UW Pharmacology, Seattle, WA</h3>
+                <p>Research Intern June 2021 – January 2023</p>
+                <ul>
+                    <li>Researched in vitro intracellular signaling for various peripherally restricted drugs</li>
+                    <li>Plated and transfected cells, imaged cells under a fluorescent microscope, performed data analysis, and prepared drug and buffer solutions</li>
+                    <li>Provided over 104 pieces of data for a paper that is soon to be published</li>
+                    <li>Presented at UW Undergraduate Research Symposium 2022</li>
+                </ul>
+            </div>
+             <div class="experience-item">
+                <h3>NIDA Summer Internship – Harvard Medical School, Belmont, MA</h3>
+                <p>Research Intern June 2022 – August 2022</p>
+                <ul>
+                    <li>Trained one-on-one by the director of Psychiatric Neurogenomics at McLean Hospital, Dr. Carl Lin</li>
+                    <li>Researched genetic risk factors for cocaine addiction</li>
+                    <li>Conducted luciferase and protein assays, plasmid isolation, DNA purification, and PCR</li>
+                    <li>Presented at the 2022 NIDA Summer Research Internship Program Project Showcase</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>UW Paul G. Allen School of Computer Science & Engineering, Seattle, WA</h3>
+                <p>Head Teaching Assistant June 2023 – Sep 2023</p>
+                <ul>
+                    <li>Held weekly teaching sessions, guest lectured in topics of Data Structures and Algorithms</li>
+                    <li>Lead a subcommittee of three other teaching assistants</li>
+                    <li>Graded assignments and exams, providing in-depth feedback on Java code</li>
+                    <li>Coordinated with the instructor to provide feedback and suggestions for improving the course content</li>
+                </ul>
+            </div>
+            <div class="experience-item">
+                <h3>UW Neurobiology Club, Seattle, WA</h3>
+                <p>Fundraising Officer Sep 2021 – June 2023</p>
+                <ul>
+                    <li>Planned, advertised and ran fundraising events, partnered with two local businesses</li>
+                    <li>Lead a committee of four students to help increase engagement and support fundraising endeavors</li>
+                </ul>
+            </div>
+        
         </section>
         <section class="skills">
             <h2>Skills</h2>
@@ -139,28 +202,36 @@
                     <img src="images/peptide_digest.png" alt="Capstone Project Image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="project-details">
-                    <h3>Capstone Project: Peptide Digest</h3>
+                    <h3>Peptide Digest</h3>
                     <p>For my capstone project of my Masters Degree, I partnered with Merck to reimage in the process of finding and reading scientific articles. 
                         I, along with a team of two other students, fine-tuned an LLM and creatde a front-end web-app that summarized articles, scraped their metadata, and
-                        provided a relavancy score for users. You can read my final project report here! Or you can take a look at all of our code: here</p>
+                        provided a relavancy score for users. I worked with the Gemma Model and applied Low-Rank Adapters (LoRA) to the model using thethe Performance Enhancement 
+                        for Training (PEFT) library. The fine-tuning process was then initiated with predefined training arguments, incorporating qLora and the Supervised Fine-Tuning Trainer (SFTTrainer).
+                        You can read my final project report here. Or you can take a look at all of our github repository: here</p>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="data200_image.jpg" alt="Data200 Final Project Image" style="max-width: 100%; height: auto;">
+                    <img src="data200_image.png" alt="Data200 Final Project Image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="project-details">
-                    <h3>Data200 Final Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet tortor vel condimentum dapibus.</p>
+                    <h3>Sentiment Analysis Prediction</h3>
+                    <p>This project aims to understand how people's feelings in Amazon reviews have changed over time and create computer programs that can predict those feelings. 
+                        We looked at a large set of Amazon reviews from 1996 to 2014 and used a VADER sentiment analysis to understand if the reviews were positive or negative. 
+                        Then we built different models, using linear regression techniques, to estimate how people would feel based on things like the year the review was written, 
+                        the length of the review, and whether the reviewer was verified. Model 1 predicts overly polar reviews over time, showing remarkable accuracy in reducing standard deviations
+                        for overly positive and negative reviews. Model 2 employs a Multiple Linear Model to predict polarity scores, while Model 3 extends this by incorporating one-hot encoded categories
+                        and Lasso regression with regularization. Results suggest success in tracking sentiment trends and emphasize the importance of sentiment analysis in understanding consumer feedback nuances. </p>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="parallel_project_image.jpg" alt="Parallel Project Image" style="max-width: 100%; height: auto;">
+                    <img src="parallel_project_image.png" alt="Parallel Project Image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="project-details">
-                    <h3>Parallel Project</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet tortor vel condimentum dapibus.</p>
+                    <h3>Parallelization of a Particle Simulation</h3>
+                    <p>This projects takes a naive implementation of a particle simulation and parallelizing it using MPI. We were sucessful in significantly improving the code performance. Additionally this project was
+                    done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. </p>
                 </div>
             </div>
         </section>
