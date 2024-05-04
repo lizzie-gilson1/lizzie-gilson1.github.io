@@ -100,7 +100,7 @@
 <body>
     <header>
         <h1>Elizabeth Gilson</h1>
-        <img src="images/elizabeth_gilson_typing.gif" alt="Elizabeth Gilson Typing" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; height: auto;">
+<!--         <img src="images/elizabeth_gilson_typing.gif" alt="Elizabeth Gilson Typing" style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); max-width: 100%; height: auto;"> -->
         <div class="contact-info">
             <p>Email: <a href="mailto:lizzieg@berkeley.edu">lizzieg@berkeley.edu</a> | Phone: 425.626.8496 | LinkedIn: <a href="https://linkedin.com/in/elizabeth-gilson">linkedin.com/in/elizabeth-gilson</a></p>
         </div>
@@ -138,17 +138,20 @@
             <h2>Relevant Experience</h2>
             <div class="experience-item">
                 <h3>Merck</h3>
-                <p>Berkelet, CA</p>
+                <p>Berkeley, CA</p>
             </div>
             <div>
                 <p>Capstone Project January 2024 – Current</p>
                 <ul>
-                    <li>Finetuned an LLM for analysis of scientific articles with PyTorch using Gemma as the base model</li>
+                    <li>Fine-tuned an LLM for analysis of scientific articles with PyTorch using Gemma as the base model</li>
                     <li>Automated data scraping, cleaned data, calculated performance metrics of the model</li>
                 </ul>
             </div>
             <div class="experience-item">
-                <h3>UC Berkeley Department of Integrative Biology, Berkeley, CA</h3>
+                <h3>UC Berkeley Department of Integrative Biology</h3>
+                <p>Berkeley, CA</p>
+            </div>
+            <div>
                 <p>Graduate Student Instructor Sep 2023 – Current</p>
                 <ul>
                     <li>Led lab sessions of 32 students, presenting to students and guiding them through concepts in Integrative Biology</li>
@@ -157,7 +160,10 @@
                 </ul>
             </div>
             <div class="experience-item">
-                <h3>Chavkin Lab – UW Pharmacology, Seattle, WA</h3>
+                <h3>Chavkin Lab – UW Pharmacology</h3>
+                <p>Seattle, WA</p>
+            </div>
+            <div>
                 <p>Research Intern June 2021 – January 2023</p>
                 <ul>
                     <li>Researched in vitro intracellular signaling for various peripherally restricted drugs</li>
@@ -167,7 +173,10 @@
                 </ul>
             </div>
              <div class="experience-item">
-                <h3>NIDA Summer Internship – Harvard Medical School, Belmont, MA</h3>
+                <h3>NIDA Summer Internship – Harvard Medical School</h3>
+                <p>Belmont, MA</p>
+             </div>
+            <div>
                 <p>Research Intern June 2022 – August 2022</p>
                 <ul>
                     <li>Trained one-on-one by the director of Psychiatric Neurogenomics at McLean Hospital, Dr. Carl Lin</li>
@@ -177,7 +186,10 @@
                 </ul>
             </div>
             <div class="experience-item">
-                <h3>UW Paul G. Allen School of Computer Science & Engineering, Seattle, WA</h3>
+                <h3>UW Paul G. Allen School of Computer Science & Engineering</h3>
+                <p>Seattle, WA</p>
+            </div>
+            <div>
                 <p>Head Teaching Assistant June 2023 – Sep 2023</p>
                 <ul>
                     <li>Held weekly teaching sessions, guest lectured in topics of Data Structures and Algorithms</li>
@@ -186,14 +198,7 @@
                     <li>Coordinated with the instructor to provide feedback and suggestions for improving the course content</li>
                 </ul>
             </div>
-            <div class="experience-item">
-                <h3>UW Neurobiology Club, Seattle, WA</h3>
-                <p>Fundraising Officer Sep 2021 – June 2023</p>
-                <ul>
-                    <li>Planned, advertised and ran fundraising events, partnered with two local businesses</li>
-                    <li>Lead a committee of four students to help increase engagement and support fundraising endeavors</li>
-                </ul>
-            </div>
+           
         
         </section>
         <section class="skills">
@@ -212,39 +217,56 @@
                 <div class="project-details">
                     <h3>Peptide Digest</h3>
                     <p>For my capstone project of my Masters Degree, I partnered with Merck to reimage in the process of finding and reading scientific articles. 
-                        I, along with a team of two other students, fine-tuned an LLM and creatde a front-end web-app that summarized articles, scraped their metadata, and
-                        provided a relavancy score for users. I worked with the Gemma Model and applied Low-Rank Adapters (LoRA) to the model using thethe Performance Enhancement 
+                        I, along with a team of two other students, fine-tuned an LLM and created a front-end web-app that summarized articles, scraped their metadata, and
+                        provided a relevance score for users. I worked with the Gemma Model and applied Low-Rank Adapters (LoRA) to the model using the Performance Enhancement 
                         for Training (PEFT) library. The fine-tuning process was then initiated with predefined training arguments, incorporating qLora and the Supervised Fine-Tuning Trainer (SFTTrainer).
-                        You can read my final project report here. Or you can take a look at all of our github repository: here</p>
+                        You can read my final project report</p>
+                        <a href="files/Capstone_Final_Report.pdf" download="Capstone_Final_Report.pdf">here</a>
+                    <p>. Or you can take a look at our github repository: </p>
+                        <a href="https://github.com/peptide-digest"> here</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="data200_image.png" alt="Data200 Final Project Image" style="max-width: 100%; height: auto;">
+                    <img src="images/data200_image.png" alt="Data200 Final Project Image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="project-details">
                     <h3>Sentiment Analysis Prediction</h3>
                     <p>This project aims to understand how people's feelings in Amazon reviews have changed over time and create computer programs that can predict those feelings. 
                         We looked at a large set of Amazon reviews from 1996 to 2014 and used a VADER sentiment analysis to understand if the reviews were positive or negative. 
                         Then we built different models, using linear regression techniques, to estimate how people would feel based on things like the year the review was written, 
-                        the length of the review, and whether the reviewer was verified. Model 1 predicts overly polar reviews over time, showing remarkable accuracy in reducing standard deviations
-                        for overly positive and negative reviews. Model 2 employs a Multiple Linear Model to predict polarity scores, while Model 3 extends this by incorporating one-hot encoded categories
-                        and Lasso regression with regularization. Results suggest success in tracking sentiment trends and emphasize the importance of sentiment analysis in understanding consumer feedback nuances. </p>
+                        the length of the review, and whether the reviewer was verified. Results suggest success in tracking sentiment trends and emphasize the importance of sentiment analysis 
+                        in understanding consumer feedback nuances. Look at the github repository </p>
+                    <a href="https://github.com/lizzie-gilson1/AmazonReviews_Sentiments">here</a>
+                    <p>, or access the final report </p>
+                    <a href="files/Data200_Final_Report.pdf" download="Data200_Final_Report.pdf">here.</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="parallel_project_image.png" alt="Parallel Project Image" style="max-width: 100%; height: auto;">
+                    <img src="images/parallel_project_image.png" alt="Parallel Project Image" style="max-width: 100%; height: auto;">
                 </div>
                 <div class="project-details">
                     <h3>Parallelization of a Particle Simulation</h3>
-                    <p>This projects takes a naive implementation of a particle simulation and parallelizing it using MPI. We were sucessful in significantly improving the code performance. Additionally this project was
-                    done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. </p>
+                    <p>This project takes a naive implementation of a particle simulation and parallelizes it using MPI. We were successful in significantly improving the code performance. Additionally this project was
+                    done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. You can see our results and explanation
+                    of our implementation in </p>
+                    <a href="files/Parallel_Report.pdf" download="Parallel_Report.pdf">this project report</a>
                 </div>
             </div>
         </section>
 
         <section class="volunteer">
+             <div class="experience-item">
+                <h3>UW Neurobiology Club</h3>
+                <p>Seattle, WA</p>
+            </div>
+                <p>Fundraising Officer Sep 2021 – June 2023</p>
+                <ul>
+                    <li>Planned, advertised and ran fundraising events, partnered with two local businesses</li>
+                    <li>Lead a committee of four students to help increase engagement and support fundraising endeavors</li>
+                </ul>
+            </div>
             <h2>Volunteer Experience</h2>
             <p>Free Radicals - May 2020 – June 2021: Was involved with an activist collective aimed at making science more equitable. Attended book clubs to gain further education into the intersection of social issues and science.</p>
         </section>
