@@ -94,6 +94,24 @@
             margin-top: 5px;
             padding-left: 20px;
         }
+        .project-images {
+            display: flex;
+        }
+        
+        .project-images img {
+            max-width: 200px; 
+            height: auto;
+            margin-right: 10px; 
+        }
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; 
+        }
+        
+        .university-logo {
+            margin-right: 20px;
+        }
         </style>
 
 </head>
@@ -204,9 +222,9 @@
         <section class="skills">
             <h2>Skills</h2>
             <img src="images/languages.png"" alt="Skill Image" style="max-width: 60%; height: auto; margin-bottom: 10px;">
-            <p>Languages: Python, C++, Java, R, Matlab, Machine Learning Techniques (PyTorch and scikit-learn)</p>
-            <p>Developer Tools: Git, VS Code, Eclipse, Jupyter Notebooks</p>
-            <p>ML Models: Llama2, Gemma</p>
+            <p><strong>Languages:</strong> Python, C++, Java, R, Matlab, Machine Learning Techniques (PyTorch and scikit-learn), HTML</p>
+            <p><strong>Developer Tools:</strong> Git, VS Code, Eclipse, Jupyter Notebooks</p>
+            <p><strong>ML Models:</strong> Llama2, Gemma</p>
         </section>
       <section class="projects">
             <h2>Projects</h2>
@@ -220,15 +238,12 @@
                         I, along with a team of two other students, fine-tuned an LLM and created a front-end web-app that summarized articles, scraped their metadata, and
                         provided a relevance score for users. I worked with the Gemma Model and applied Low-Rank Adapters (LoRA) to the model using the Performance Enhancement 
                         for Training (PEFT) library. The fine-tuning process was then initiated with predefined training arguments, incorporating qLora and the Supervised Fine-Tuning Trainer (SFTTrainer).
-                        You can read my final project report</p>
-                        <a href="files/Capstone_Final_Report.pdf" download="Capstone_Final_Report.pdf">here</a>
-                    <p>. Or you can take a look at our github repository: </p>
-                        <a href="https://github.com/peptide-digest"> here</a>
+                        You can read my final project report</p><a href="files/Capstone_Final_Report.pdf" download="Capstone_Final_Report.pdf">here</a><p>. Or you can take a look at our github repository: </p><a href="https://github.com/peptide-digest"> here</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="images/data200_image.png" alt="Data200 Final Project Image" style="max-width: 100%; height: auto;">
+                    <img src="images/data200_image.png" alt="Data200 Final Project Image">
                 </div>
                 <div class="project-details">
                     <h3>Sentiment Analysis Prediction</h3>
@@ -236,22 +251,18 @@
                         We looked at a large set of Amazon reviews from 1996 to 2014 and used a VADER sentiment analysis to understand if the reviews were positive or negative. 
                         Then we built different models, using linear regression techniques, to estimate how people would feel based on things like the year the review was written, 
                         the length of the review, and whether the reviewer was verified. Results suggest success in tracking sentiment trends and emphasize the importance of sentiment analysis 
-                        in understanding consumer feedback nuances. Look at the github repository </p>
-                    <a href="https://github.com/lizzie-gilson1/AmazonReviews_Sentiments">here</a>
-                    <p>, or access the final report </p>
-                    <a href="files/Data200_Final_Report.pdf" download="Data200_Final_Report.pdf">here.</a>
+                        in understanding consumer feedback nuances. Look at the github repository </p><a href="https://github.com/lizzie-gilson1/AmazonReviews_Sentiments">here</a><p>, or access the final report </p><a href="files/Data200_Final_Report.pdf" download="Data200_Final_Report.pdf">here.</a>
                 </div>
             </div>
             <div class="project-item">
                 <div class="project-image">
-                    <img src="images/parallel_project_image.png" alt="Parallel Project Image" style="max-width: 100%; height: auto;">
+                    <img src="images/parallel_project_image.png" alt="Parallel Project Image" >
                 </div>
                 <div class="project-details">
                     <h3>Parallelization of a Particle Simulation</h3>
                     <p>This project takes a naive implementation of a particle simulation and parallelizes it using MPI. We were successful in significantly improving the code performance. Additionally this project was
                     done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. You can see our results and explanation
-                    of our implementation in </p>
-                    <a href="files/Parallel_Report.pdf" download="Parallel_Report.pdf">this project report</a>
+                    of our implementation in </p><a href="files/Parallel_Report.pdf" download="Parallel_Report.pdf">this project report.</a>
                 </div>
             </div>
         </section>
