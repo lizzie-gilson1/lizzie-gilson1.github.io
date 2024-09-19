@@ -5,26 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Elizabeth Gilson - Resume</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
-    <style>
+        <style>
         body {
             font-family: 'Inter', Arial, sans-serif;
-            background-color: #00203FFF;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #00203FFF; /* Dark blue background */
+            color: #fff; /* White text */
+        }
+        header {
+            background-color: #000000;
             color: #fff;
+            padding: 20px;
             text-align: center;
-            padding: 50px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        .contact-info {
+            margin-top: 10px;
+            font-size: 16px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #00203FFF; 
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+        section {
+            margin-bottom: 40px;
+            padding: 20px; /* Add padding for spacing */
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for transform and box-shadow */
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+        section:hover {
+            transform: scale(1.05); /* Increase size on hover */
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.5); /* Add glow effect on hover */
+        }
+        h2 {
+            color: #fff;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 10px;
         }
         a {
             color: #007bff;
             text-decoration: none;
-            font-size: 20px;
         }
         a:hover {
             text-decoration: underline;
         }
-    </style>
+/*         .experience-item {
+            border-left: 4px solid #007bff;
+            padding-left: 10px;
+            margin-bottom: 20px;
+        } */
+        .skills p {
+            margin-bottom: 10px;
+        }
+        .volunteer p {
+            margin-bottom: 10px;
+        }
+         .experience-item {
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .experience-item h3 {
+            margin: 0;
+        }
+        .experience-item p {
+            margin: 0;
+        }
+        .experience-item ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+        .project-images {
+            display: flex;
+        }
+        
+        .project-images img {
+            max-width: 200px; 
+            height: auto;
+            margin-right: 10px; 
+        }
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; 
+        }
+        
+        .university-logo {
+            margin-right: 20px;
+        }
+        footer {
+            background-color: #f0f0f0;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .social-links {
+             display: flex;
+        }
+        
+        .social-links a {
+            margin-right: 10px;
+        }
+        .social-links img {
+            max-width: 20%;
+            height: auto;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px; /* Adjust spacing between buttons */
+        }
+        
+        nav ul li:last-child {
+            margin-right: 0; /* Remove margin for the last button */
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+        </style>
 </head>
 <body>
-    <h1>Elizabeth Gilson - Resume</h1>
+    <h1>Resume</h1>
+    <h2>Below my formal resume, please take a look! </h2>
+    <iframe src="files/Gilson_CV.pdf" title="Elizabeth Gilson Resume"></iframe>
+    <p>If you cannot view the resume, <a href="files/Gilson_CV.pdf" target="_blank">click here to download the PDF</a>.</p>
     <p><a href="files/Gilson_CV.pdf" target="_blank">Download My Resume (PDF)</a></p>
 </body>
 </html>
