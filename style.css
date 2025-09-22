@@ -106,3 +106,114 @@ footer {
   border-top: 1px solid #444;
   padding-top: 1rem;
 }
+
+/* ==== Fun Facts === */
+#two-truths-lie {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* spacing between cards */
+  margin: 2rem 0;
+}
+
+#two-truths-lie h2 {
+  text-align: center;
+  color: #ffcc66;
+  margin-bottom: 2rem;
+}
+
+/* Card container */
+.fact-card {
+  perspective: 1000px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative; /* needed for flipping back div */
+}
+
+/* Inner card for flipping */
+.card-front, .card-back {
+  width: 100%;
+  height:150px;
+  /* min-height: 150px; */
+  padding: 2rem;
+  border-radius: 12px;
+  color: #fff;
+  background-color: #001f4d; /* default dark blue */
+  backface-visibility: hidden;
+  transition: transform 0.6s, background-color 0.6s;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Position the back card exactly over front */
+.card-back {
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+}
+
+/* Flipped state */
+.fact-card.flipped .card-front {
+  transform: rotateY(180deg);
+}
+
+.fact-card.flipped .card-back {
+  transform: rotateY(0deg);
+}
+
+/* Truth / Lie colors applied to back card */
+.fact-card.flipped.truth .card-back {
+  background-color: #2ecc71; /* green */
+  color: #fff;
+}
+
+.fact-card.flipped.lie .card-back {
+  background-color: #e74c3c; /* red */
+  color: #fff;
+}
+
+/* Links formatting */
+.fact-card a {
+  color: #ffeb99;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.fact-card a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.fact-result{
+  font-size: 2rem; /* large bold text */
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display:block;
+}
+
+.fact-explanation {
+  font-size: 1rem; /* smaller explanatory text */
+  display: block;
+}
+
+.fact-explanation a {
+  color: #ffeb99;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+
+/* new */
+.fact-prefix{
+  margin-right: 100px; /*Space after false or true*/
+}
+
+.fact-link{
+  margin-left: 5px; /* space before more */
+}

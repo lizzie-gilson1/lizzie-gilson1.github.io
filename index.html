@@ -19,9 +19,8 @@
       <ul>
         <li><a class="nav-btn" href="education.html">Education</a></li>
         <li><a class="nav-btn" href="experience.html">Experience</a></li>
-        <li><a class="nav-btn" href="skills.html">Skills</a></li>
-        <li><a class="nav-btn" href="projects.html">Projects</a></li>
-        <li><a class="nav-btn" href="volunteer.html">Volunteer</a></li>
+        <li><a class="nav-btn" href="projects.html">Portfolio</a></li>
+      
       </ul>
     </nav>
   </header>
@@ -38,8 +37,54 @@
     </section>
   </main>
 
+   <!-- Fun Facts / Two Truths and a Lie -->
+  <section id="two-truths-lie">
+    <h2>Two Truths and a Lie 🎲</h2>
+
+      <div class="fact-card" data-truth="true" onclick="toggleFact(this)">
+        <div class="card-front">
+          I have two degrees, one in Biochemistry and one in Molecular Science & Software Engineering.
+        </div>
+        <div class="card-back">
+          <div class="fact-result">Truth!</div>
+          <div class="fact-explanation">
+            That's correct! Learn more about my <a href="education.html">education</a>.
+          </div>
+        </div>
+      </div>
+
+      <div class="fact-card" data-truth="false" onclick="toggleFact(this)">
+        <div class="card-front">
+          I have studied five programming languages.
+        </div>
+        <div class="card-back">
+          <div class="fact-result">False!</div>
+          <div class = "fact-explanation">
+            I learned HTML for this website, making the number of programming languages I have coded in: <strong>six</strong>! Learn more about my</span> <a href="experience.html">experience</a>.
+          </div> 
+        </div>
+      </div>
+
+      <div class="fact-card" data-truth="true" onclick="toggleFact(this)">
+        <div class="card-front">
+          I have created multiple projects in AI and data science.
+        </div>
+        <div class="card-back">
+          <div class="fact-result">Truth!</div>
+          <div class="fact-explanation">
+            Check out my <a href="projects.html">portfolio</a>.
+          </div>
+        </div>
+      </div>
+  </section>
+    
+  </main>
+
   <footer>
     <p>&copy; 2025 Elizabeth Gilson</p>
   </footer>
+
+  <!-- Link to external JavaScript-->
+   <script src="script.js"></script>
 </body>
 </html>
