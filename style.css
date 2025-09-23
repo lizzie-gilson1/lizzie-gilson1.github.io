@@ -5,8 +5,14 @@ body {
   color: #f0f0f0;
   background-color: #0a1a33; /* dark blue */
   max-width: 900px;
-  margin: auto;
-  padding: 2rem;
+  /* margin: auto; */
+  margin: 0;
+  padding: 0;
+  /* padding: 2rem; */
+}
+
+main.container{
+  margin-top: 3rem;
 }
 
 /* ===== Headings ===== */
@@ -21,18 +27,27 @@ h1 {
   margin-bottom: 0.5rem;
 }
 
+/* Top of website header */
+.header-top{
+  width: 100%;
+  border-top: 6px solid #031016; /* dark blue */
+  padding: 1rem 2rem;             /* space inside header */
+  background-color: #031016;
+  box-sizing:border-box;
+}
+
 /* ===== Contact Info ===== */
-.contact {
+.header-top .contact {
   text-align: center;
   margin-bottom: 1rem;
 }
 
-.contact a {
+.header-top .contact a {
   color: #ffcc66;
   font-weight: bold;
 }
 
-.contact a:hover {
+.header-top .contact a:hover {
   color: #ffffff;
 }
 
@@ -169,7 +184,7 @@ footer {
 
 /* Truth / Lie colors applied to back card */
 .fact-card.flipped.truth .card-back {
-  background-color: #2ecc71; /* green */
+  background-color: #50902f; /* green */
   color: #fff;
 }
 
@@ -217,3 +232,139 @@ footer {
 .fact-link{
   margin-left: 5px; /* space before more */
 }
+
+
+/* ======== Education Page  =========*/
+.education-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+  transition: transform 0.2s;      
+}
+
+.education-item .logo {
+  width: 200px;     
+  height: auto;
+  margin-right: 1rem;
+}
+
+.education-item h3 {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  background-color: #083469; /* neutral light gray */
+  color: #ffffff;            /* dark text for professional look */
+  border-radius: 0;           /* sharp edges */
+  display: inline-block;
+  font-weight: 800;           /* slightly bolder for emphasis */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.education-item h4{
+  font-weight: 600;
+}
+
+.education-item p {
+  margin: 0.3rem 0;
+}
+
+.edu-desc {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #ffffff;
+  line-height: 1.4;
+  padding: 1rem;
+  background-color: #083469; /* light gray background */
+  border-radius: 8px;
+  transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+/* space btw two items*/
+.education-item + .education-item{
+  margin-top: 4rem;
+}
+
+/* carousel */
+.carousel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.carousel-content {
+   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 90%;
+  max-height: 80vh; /* fit within viewport */
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+
+.carousel img {
+   max-width: 80%;
+  max-height: 55vh; /* keep room for captions */
+  object-fit: contain; /* scales image without cropping */
+  border-radius: 8px;
+}
+
+.carousel-content .caption {
+  margin-top: 0.5rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5); /* ensures readability */
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  max-width: 80%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+.prev { left: 2rem; }
+.next { right: 2rem; }
+
+#masters-btn{
+   display: block;           /* makes it take up its own line */
+  margin: 40px auto;        /* centers horizontally, adds space top/bottom */
+  padding: 15px 30px;       /* bigger click area */
+  font-size: 1.2rem;        /* larger text */
+  font-weight: bold;
+  color: #fff;              /* text color */
+  background-color: #4a90e2; /* button background */
+  border: none;             /* remove default border */
+  border-radius: 10px;      /* rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#masters-btn:hover{
+  background-color: #357ab8; 
+}
+
+
+

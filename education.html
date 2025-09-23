@@ -3,39 +3,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Education - Elizabeth Gilson</title>
+  <title>Elizabeth Gilson - Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
+
 <body>
   <header>
-    <h1>Education</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="experience.html">Experience</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="volunteer.html">Volunteer</a></li>
-      </ul>
-    </nav>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
   </header>
 
   <main class="container">
     <div class="education-item">
-      <img src="images/Seal_of_University_of_California,_Berkeley.svg.png" alt="UC Berkeley Logo" class="logo">
+      <img src="images/2048px-Seal_of_University_of_California,_Berkeley.svg.png" alt="UC Berkeley Logo" class="logo">
       <div>
-        <h3>UC Berkeley</h3>
-        <p>Master of Molecular Science and Software Engineering — May 2024</p>
+        <h3>University of California, Berkeley</h3>
+        <h4>Master of Molecular Science and Software Engineering</h4>
+        <p class = "edu-desc">In my Master’s degree in Molecular Science and Software Engineering at UC Berkeley, I learned 
+          to combine molecular science with modern software engineering, machine learning, and high-performance computing.
+          The program emphasized both technical and professional skills, from algorithm design and data analysis to leadership, 
+          ethics, and project management. For my capstone project, I partnered with Merck to fine-tune a large language model (LLM),
+          applying these skills to a real-world scientific challenge.</p>
       </div>
     </div>
+
+    <button id="masters-btn">See highlights from my Masters!</button>
+    <div id="masters-carousel" class="carousel" style="display:none;">
+      <span class="close-btn">&times;</span>
+      <div class="carousel-content">
+        <img src="" alt="Masters Degree Highlights">
+        <p class="caption"></p>
+      
+      </div>
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </div>
+
      <div class="education-item">
       <img src="images/University_of_Washington_seal.svg.png" alt="UW Logo" class="logo">
       <div>
         <h3>University of Washington</h3>
-        <p>B.S. Biochemistry (Honors), Minor in Applied Math — June 2023</p>
+        <h4>B.S. Biochemistry (Honors), Minor in Applied Math</h4>
         <p>Graduated with Research Honors</p>
+        <p class="edu-desc"> At the University of Washington, I earned a B.S. in Biochemistry with a minor in Applied Math, 
+          graduating with Research Honors. I conducted pharmacology research in the Chavkin Lab and completed a NIDA internship
+           at Harvard Medical School, gaining hands-on experience in neuroscience and drug-related studies. I also taught for 
+           the Chemistry and Computer Science departments, helping students learn complex concepts. Outside the classroom, 
+           I served as Fundraising Officer for the Neurobiology Club, supporting student initiatives and events.</p>
       </div>
     </div>
   </main>
+<script src="carousel.js"></script>
 </body>
+
+<footer>
+  <p>&copy; 2025 Elizabeth Gilson</p>
+</footer>
+
 </html>

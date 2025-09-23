@@ -8,16 +8,14 @@
 </head>
 <body>
   <header>
-    <h1>Experience</h1>
-    <nav>
-      <ul>
-        <li><a class="nav-btn" href="index.html">Home</a></li>
-        <li><a class="nav-btn" href="education.html">Education</a></li>
-        <li><a class="nav-btn" href="skills.html">Skills</a></li>
-        <li><a class="nav-btn" href="projects.html">Projects</a></li>
-        <li><a class="nav-btn" href="volunteer.html">Volunteer</a></li>
-      </ul>
-    </nav>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
   </header>
 
   <main class="container">
