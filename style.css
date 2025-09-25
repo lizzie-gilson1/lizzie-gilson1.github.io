@@ -4,7 +4,6 @@ body {
   line-height: 1.6;
   color: #f0f0f0;
   background-color: #0a1a33; /* dark blue */
-  max-width: 900px;
   /* margin: auto; */
   margin: 0;
   padding: 0;
@@ -31,9 +30,10 @@ h1 {
 .header-top{
   width: 100%;
   border-top: 6px solid #031016; /* dark blue */
-  padding: 1rem 2rem;             /* space inside header */
+  padding: 1rem 0;             /* space inside header */
   background-color: #031016;
   box-sizing:border-box;
+  text-align:center;
 }
 
 /* ===== Contact Info ===== */
@@ -367,4 +367,63 @@ footer {
 }
 
 
+/*=========== Experience ======== */
+.experience-card{
+  display: flex;
+  /* align-items: flex-start; Align logo with top of text */
+  gap: 1rem; /* Space between logo and text */
+  margin-bottom: 2rem; /* Space between cards */
+  align-items:center;
+}
+.experience-section{
+  max-width: 900px;    
+  margin: 0 auto;      /* Center container horizontally */
+  padding: 2rem 1rem;  /* Some space around content */
+}
+.experience-section a {
+  
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.experience-section a:hover {
+  color: #9bc1e2;
+  text-decoration: underline;
+}
+
+.experience-logo {
+  width: 150px !important; 
+       /* Control logo size */
+  /* height: auto;     Keep aspect ratio */
+  /* flex-shrink: 0;   /* Prevent logo from shrinking */
+  /* object-fit: contain; */
+  /* margin-top: -10px; */ 
+}
+
+.experience-header{
+  display:flex;
+  flex-direction: column;
+}
+
+.experience-details {
+  flex: 1; /* Take remaining space */
+}
+
+.read-more-btn {
+  margin-top: 10px;
+  padding: 6px 12px;
+  border: none;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.read-more-btn:hover {
+  background-color: #003f80;
+}
+
+.hidden{
+  display: none;
+}
 
