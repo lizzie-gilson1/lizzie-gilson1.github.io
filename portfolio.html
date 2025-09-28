@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elizabeth Gilson - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <header>
+    <div id="header-placeholder"></div>
+    <script>
+      fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header-placeholder').innerHTML = data;
+        });
+    </script>
+  </header>
+
+<section id="projects">
+  <h2>Projects</h2>
+
+  <div class="project-item">
+    <div class="project-image">
+      <img src="images/peptide_digest.png" alt="Capstone Project Image">
+    </div>
+    <div class="project-details">
+      <h3>Peptide Digest</h3>
+      <p>
+        For my capstone project of my Masters Degree, I partnered with Merck to reimagine the process of finding and reading scientific articles. 
+        I, along with a team of two other students, fine-tuned an LLM and created a front-end web-app that summarized articles, scraped their metadata, and
+        provided a relevance score for users. I worked with the Gemma Model and applied Low-Rank Adapters (LoRA) to the model using the Performance Enhancement 
+        for Training (PEFT) library. The fine-tuning process was then initiated with predefined training arguments, incorporating qLora and the Supervised Fine-Tuning Trainer (SFTTrainer).
+        You can read my final project report <a href="files/Capstone_Final_Report.pdf" download="Capstone_Final_Report.pdf">here</a>. 
+        Or you can take a look at our github repository: <a href="https://github.com/peptide-digest">here</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-image">
+      <img src="images/data200_image.png" alt="Data200 Final Project Image">
+    </div>
+    <div class="project-details">
+      <h3>Sentiment Analysis Prediction</h3>
+      <p>
+        This project aims to understand how people's feelings in Amazon reviews have changed over time and create computer programs that can predict those feelings. 
+        We looked at a large set of Amazon reviews from 1996 to 2014 and used a VADER sentiment analysis to understand if the reviews were positive or negative. 
+        Then we built different models, using linear regression techniques, to estimate how people would feel based on things like the year the review was written, 
+        the length of the review, and whether the reviewer was verified. Results suggest success in tracking sentiment trends and emphasize the importance of sentiment analysis 
+        in understanding consumer feedback nuances. Look at the github repository: <a href="https://github.com/lizzie-gilson1/AmazonReviews_Sentiments">here</a> 
+        or access the final report: <a href="files/Data200_Final_Report.pdf" download="Data200_Final_Report.pdf">here</a>.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-image">
+      <img src="images/parallel_project_image.jpeg" alt="Parallel Project Image">
+    </div>
+    <div class="project-details">
+      <h3>Parallelization of a Particle Simulation</h3>
+      <p>
+        This project takes a naive implementation of a particle simulation and parallelizes it using MPI. We were successful in significantly improving the code performance. Additionally this project was
+        done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. You can see our results and explanation
+        of our implementation in this <a href="files/Parallel_Report.pdf" download="Parallel_Report.pdf">project report</a>.
+      </p>
+    </div>
+  </div>
+</section>
