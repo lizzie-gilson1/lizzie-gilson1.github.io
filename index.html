@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elizabeth Gilson - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
   <header>
@@ -16,32 +17,16 @@
           document.getElementById('header-placeholder').innerHTML = data;
         });
     </script>
-    <!-- <div class="header-top">
-      <h1>Elizabeth Gilson</h1>
-      <div class="contact">
-        <a href="mailto:lizzieg@berkeley.edu">lizzieg@berkeley.edu</a> 
-        <span class="separator">|</span>
-        <a href="https://linkedin.com/in/elizabeth-gilson">linkedin.com/in/elizabeth-gilson</a>
-      </div>
-    </div>
-    
-    <nav>
-      <ul>
-        <li><a class="nav-btn" href="education.html">Education</a></li>
-        <li><a class="nav-btn" href="experience.html">Experience</a></li>
-        <li><a class="nav-btn" href="projects.html">Portfolio</a></li>
-      
-      </ul>
-    </nav> -->
+  
   </header>
 
   <main class="container">
     <section id="intro">
       <div class="intro-content">
-        <img src="images/elizabeth_photo.jpg" alt="Elizabeth Gilson" class="profile-pic">
+        <img src="images/elizabeth-photo2.jpg" alt="Elizabeth Gilson" class="profile-pic">
         <div>
-          <p>Hello, I'm Elizabeth Gilson, a passionate learner and developer with a background in biochemistry and software engineering. Welcome to my portfolio!</p>
-          <p><a class="btn" href="files/resume.pdf" target="_blank">📄 View My Resume</a></p>
+          <p>Hello, I'm Elizabeth Gilson, a passionate educator and data scientist with a background in biochemistry and software engineering. Welcome to my portfolio!</p>
+          <p><a class="btn" href="Gilson_Resume.pdf" download="Gilson_Resume.pdf">📄 View My Resume</a></p>
         </div>
       </div>
     </section>
@@ -87,7 +72,35 @@
         </div>
       </div>
   </section>
-    
+<!--
+ <section id="what-do-i-do">
+        <h2>What do I do?</h2>
+        <div id="pathway-sentence" style="text-align: center; margin-top: 30px; font-size: 1.1rem; color: #475569; font-style: italic; min-height: 28px; transition: all 0.3s ease;">
+            Click on any skill to see how I use it!
+        </div>  
+        <div class="web">
+            <div class="column" id="col-a">
+                <div class="item" id="a1" data-connections="b1,b2, c1, c4, c3">Python</div>
+                <div class="item" id="a2" data-connections="b2, c2">C++</div>
+                <div class="item" id="a3" data-connections="b2, b3, c3, c1">R</div>
+                <div class="item" id="a4" data-connections="b1, b3, b4, c1, c3">SQL</div>
+            </div>
+            <div class="column" id="col-b">
+                <div class="item" id="b1" data-connections="c1, c4, c3">Jupyter Notebooks</div>
+                <div class="item" id="b2" data-connections="c1, c2, c4">VS Code</div>
+                <div class="item" id="b3" data-connections="c1, c3">RStudio</div>
+                <div class="item" id="b4" data-connections="c1, c3">MySQL</div>
+            </div>
+            <div class="column" id="col-c">
+                <div class="item" id="c1" data-connections="">Data Science</div>
+                <div class="item" id="c2" data-connections="">Computational Modeling</div>
+                <div class="item" id="c3" data-connections="">Research Analysis</div>
+                <div class="item" id="c4" data-connections="">Machine Learning</div>
+            </div>
+            <svg id="connections"></svg>
+        </div>
+      -->
+         
   </main>
 
   <footer>
@@ -96,5 +109,6 @@
 
   <!-- Link to external JavaScript-->
    <script src="script.js"></script>
+   <script src="whatdo.js"></script>
 </body>
 </html>

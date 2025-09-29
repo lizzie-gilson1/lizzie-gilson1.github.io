@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Elizabeth Gilson - Portfolio</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 
@@ -22,6 +23,28 @@
 
 <section id="projects">
   <h2>Projects</h2>
+  
+  <div class="project-item">
+  <div class="project-image">
+    <img src="images/epa_logo.png" alt="EPA Logo">
+  </div>
+  <div class="project-details">
+    <h3>EPA Research</h3>
+      <ul class="project-tags" aria-label="project tags">
+          <li class="tag">Data Science</li>
+          <li class="tag">Research</li>
+          <li class="tag">Chemistry</li>
+          <li class="tag">SQL</li>
+          <li class="tag">R</li>
+        </ul>
+    <p>
+      <strong>Note:</strong> Unfortunately, my work at the EPA was proprietary and I am not able to showcase the research projects I worked on. 
+      However, I did contribute to the release of an R package (<code>tcpl</code>), which is linked 
+      <a href="https://cran.r-project.org/web/packages/tcpl/index.html" target="_blank" rel="noopener">here</a>.
+    </p>
+  </div>
+</div>
+
 
   <div class="project-item">
     <div class="project-image">
@@ -29,6 +52,12 @@
     </div>
     <div class="project-details">
       <h3>Peptide Digest</h3>
+        <ul class="project-tags" aria-label="project tags">
+          <li class="tag">Machine Learning</li>
+          <li class="tag">NLP</li>
+          <li class="tag">Python</li>
+          <li class="tag">SQL</li>
+        </ul>
       <p>
         For my capstone project of my Masters Degree, I partnered with Merck to reimagine the process of finding and reading scientific articles. 
         I, along with a team of two other students, fine-tuned an LLM and created a front-end web-app that summarized articles, scraped their metadata, and
@@ -46,6 +75,11 @@
     </div>
     <div class="project-details">
       <h3>Sentiment Analysis Prediction</h3>
+      <ul class="project-tags" aria-label="project tags">
+          <li class="tag">Modeling</li>
+          <li class="tag">Data Science</li>
+          <li class="tag">Python</li>
+        </ul>
       <p>
         This project aims to understand how people's feelings in Amazon reviews have changed over time and create computer programs that can predict those feelings. 
         We looked at a large set of Amazon reviews from 1996 to 2014 and used a VADER sentiment analysis to understand if the reviews were positive or negative. 
@@ -63,6 +97,12 @@
     </div>
     <div class="project-details">
       <h3>Parallelization of a Particle Simulation</h3>
+       <ul class="project-tags" aria-label="project tags">
+          <li class="tag">High Performance Computing</li>
+          <li class="tag">C++</li>
+          <li class="tag">Parallelization</li>
+          <li class="tag">Computational Chemistry</li>
+        </ul>
       <p>
         This project takes a naive implementation of a particle simulation and parallelizes it using MPI. We were successful in significantly improving the code performance. Additionally this project was
         done through Perlmutter, a supercomputer at the National Energy Research Supercomputing Center in Berkeley. You can see our results and explanation

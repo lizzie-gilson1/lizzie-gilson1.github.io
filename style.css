@@ -30,7 +30,7 @@ h1 {
 .header-top{
   width: 100%;
   border-top: 6px solid #031016; /* dark blue */
-  padding: 1rem 0;             /* space inside header */
+  padding: 1rem 0 0 0;             /* space inside header */
   background-color: #031016;
   box-sizing:border-box;
   text-align:center;
@@ -51,7 +51,52 @@ h1 {
   color: #ffffff;
 }
 
+.contact-container {
+  display: flex;
+  align-items: center;   /* vertically center items */
+  gap: 0rem;           /* space between button and icons */
+  justify-content: center; 
+  margin-top: 0.1rem;
+}
+/* Contact button */
+.btn-contact {
+  padding: 0.5rem 1rem;
+  background-color: #031016; /* Google blue */
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+.btn-contact:hover {
+  background-color: #155ab6;
+}
+
+/* Social icons */
+.social-links i{
+  display: inline-block;
+  width: 1.5em;       /* set width to avoid extra spacing */
+  height: 1.5em;
+  line-height: 1;
+  vertical-align: middle;
+  text-align: center;
+}
+.social-links a {
+  color: white;
+  font-size: 2rem;
+  margin-left: 1.5rem;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #1a73e8; /* highlight on hover */
+}
+
 /* ===== Navigation Buttons ===== */
+nav {
+  background-color: #b9d8ff;
+  padding: 1.2rem 2rem;
+}
 nav ul {
   display: flex;
   justify-content: center;
@@ -59,6 +104,7 @@ nav ul {
   gap: 1rem;
   padding: 0;
   margin: 1rem 0;
+  list-style: none;
 }
 
 .nav-btn {
@@ -66,9 +112,10 @@ nav ul {
   background: #0056b3;
   color: white;
   padding: 0.6rem 1.2rem;
-  border-radius: 8px;
+  border-radius: 7px;
   transition: background 0.3s ease, transform 0.2s ease;
   font-weight: bold;
+  text-decoration: none;
 }
 
 .nav-btn:hover {
@@ -85,6 +132,8 @@ nav ul {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+   margin-left: 15%;
+  margin-right: 15%;
 }
 
 .profile-pic {
@@ -147,6 +196,9 @@ footer {
 }
 
 /* Inner card for flipping */
+.card-front{
+  font-size: 1.1rem;
+}
 .card-front, .card-back {
   width: 100%;
   height:150px;
@@ -234,6 +286,120 @@ footer {
 }
 
 
+/* =========== What do i do ========== */
+#what-do-i-do h2 {
+  text-align: center;
+  color: #ffcc66;
+  margin-bottom: 2rem;
+}
+
+#what-do-i-do {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.web {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  min-height: 400px;
+  padding: 20px 0;
+}
+
+.column {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  z-index: 2;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 16px 24px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  min-width: 140px;
+}
+
+.item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px -8px rgba(0, 0, 0, 0.25);
+}
+
+.item.highlighted {
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 12px 32px -8px rgba(245, 158, 11, 0.4);
+  z-index: 3;
+}
+
+.item.connected {
+  background: linear-gradient(135deg, #34d399 0%, #10b981 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px -8px rgba(16, 185, 129, 0.3);
+}
+
+#col-a .item {
+  background: linear-gradient(135deg, #ec4899 0%, #be185d 100%);
+}
+
+#col-b .item {
+  background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+#col-c .item {
+  background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+}
+
+#connections {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.connection-line {
+  stroke: #cbd5e1;
+  stroke-width: 2;
+  opacity: 0.3;
+  transition: all 0.3s ease;
+}
+
+.connection-line.active {
+  stroke: #fbbf24;
+  stroke-width: 3;
+  opacity: 0.8;
+  filter: drop-shadow(0 0 4px rgba(251, 191, 36, 0.4));
+}
+
+@media (max-width: 768px) {
+  .web {
+    gap: 40px;
+  }
+  
+  .column {
+    gap: 15px;
+  }
+    
+  .item {
+    min-width: 120px;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+}
 /* ======== Education Page  =========*/
 .education-item {
   display: flex;
@@ -505,4 +671,59 @@ footer {
   }
 }
 
+
+/* Tag list container */
+.project-tags {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;      /* allow tags to wrap to next line */
+  gap: 0.5rem;          /* spacing between tags */
+  margin: 0.5rem 0 1rem 0;
+  padding: 0;
+}
+
+/* Individual tag pill */
+.tag {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 0.28rem 0.6rem;
+  border-radius: 999px;   /* pill shape */
+  background: linear-gradient(135deg, #e6f2ff 0%, #f7fbff 100%);
+  color: #055a8c;
+  border: 1px solid rgba(5, 90, 140, 0.12);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03), inset 0 -1px 0 rgba(255,255,255,0.5);
+  white-space: nowrap;    /* keep words together */
+  cursor: default;
+  transition: transform 120ms ease, box-shadow 120ms ease;
+}
+
+/* Hover / focus (keyboard accessible) */
+.tag:hover,
+.tag:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(5,90,140,0.12);
+  outline: none;
+}
+
+/* Optional accent variants — use by adding a class like .tag--accent */
+.tag--accent {
+  background: linear-gradient(135deg, #fff4e6 0%, #fff9f2 100%);
+  color: #8a4b00;
+  border-color: rgba(138,75,0,0.12);
+}
+
+/* Another color option */
+.tag--muted {
+  background: #f4f6f7;
+  color: #55606b;
+  border-color: rgba(85,96,107,0.06);
+}
+
+/* Make sure tags look good on small screens */
+@media (max-width: 480px) {
+  .tag {
+    padding: 0.25rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
 
